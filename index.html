@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yes I Motion</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
 <body>
-<h1>Yesssss</h1>       
-    
+	<style>
+		body{
+			background:hsl(100,100%,50%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 90vh;
+			overflow: hidden;
+		}
+		h1{
+			font-size: 5rem;
+		}
+	</style>
+
+
+	<h1>ou Yessssss</h1>
+
+
+
+	<script>
+
+		// window.addEventListener('mousemove',function(event){
+		// 	// console.log(`y = ${event.pageY} | x = ${event.pageX}`)
+
+		// 	document.querySelector('body').style.background = `hsl(${event.pageX},100%,50%)`
+		// 	document.querySelector('h1').style.color = `hsl(${event.pageY},100%,50%)`
+		// 	document.querySelector('h1').style.fontSize = `${event.pageX}px`
+
+		// })
+
+		window.addEventListener("deviceorientation", function(event){
+			document.querySelector('body').style.background = `hsl(${event.alpha},100%,50%)`
+		});
+				
+
+
+
+	</script>
 </body>
 </html>
