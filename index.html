@@ -3,46 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="stylesheet" href="../configuracaoInicial.css">
+	<link rel="stylesheet" href="header.css">
 </head>
 <body>
-	<style>
-		body{
-			background:hsl(100,100%,50%);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 90vh;
-			overflow: hidden;
-		}
-		h1{
-			font-size: 5rem;
-		}
-	</style>
+	
+<header>
+	<div class="barra-pequena"></div>
+	<div class="barra-media"></div>
+	<div class="barra-grande"></div>
 
 
-	<h1>ou Yessssss</h1>
+</header>
 
 
+<style>
+	.barra-pequena,.barra-media,.barra-grande {
+	border:solid 1px black;
 
-	<script>
-
-		// window.addEventListener('mousemove',function(event){
-		// 	// console.log(`y = ${event.pageY} | x = ${event.pageX}`)
-
-		// 	document.querySelector('body').style.background = `hsl(${event.pageX},100%,50%)`
-		// 	document.querySelector('h1').style.color = `hsl(${event.pageY},100%,50%)`
-		// 	document.querySelector('h1').style.fontSize = `${event.pageX}px`
-
-		// })
-
-		window.addEventListener("deviceorientation", function(event){
-			document.querySelector('body').style.background = `hsl(${event.alpha},100%,50%)`
-		});
-				
-
+}
+.barra-pequena{
+	height: 35px;
+}
+.barra-media{
+	height: 10vh;
+}
+.barra-grande{
+	height: 20vh;
+}
+</style>
 
 
-	</script>
 </body>
 </html>
